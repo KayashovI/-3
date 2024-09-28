@@ -1,0 +1,23 @@
+    <header>
+<!--    <h1>Главная страница</h1>-->
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="/">Главная</a></li>
+      <li><a href="/about/">О нас</a></li>
+           {% if request.user.is_anonymous %}
+
+<li><div class=""><a href="/login">Войти</a></div></li>
+
+
+
+{% else %}
+    <div class="fguadsl">
+        <a href="/logout">выйти</a>
+    <h2>Каждый кто попал на эту страницу должен внести взнос в размере 5000 рублей!</h2>
+    <h2>номер телефона 8952347245 на сбер</h2>
+    </div>
+            </ul>
+  </nav>
+{% endif %}

@@ -1,0 +1,17 @@
+{% extends 'home/base.html'%}
+{% block title%}CoolShop - Главная страница {%endblock%}
+{% block content %}
+
+    <div class="login-form">
+        <form action="/login/" method="POST">
+            {% csrf_token %}
+            <input name="username" type="text" placeholder="Введите почту">
+            <input name="password" type="password" placeholder="Введите пароль">
+            <button type="submit">Войти</BUtton>
+        </form>
+    </div>
+</body>
+</html>
+
+
+{%endblock %}

@@ -1,0 +1,18 @@
+{% extends 'home/base.html'%}
+{% block title%}CoolShop - Главная страница {%endblock%}
+
+
+
+{% block content %}
+
+<h1>Регистрация</h1>
+<div class="">
+  <form method="post" action="/register/">
+
+    {% csrf_token %}
+    {{ form.as_table }}
+
+    <button >Зарегистрироваться</button>
+  </form>
+</div>
+{%endblock %}

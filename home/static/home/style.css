@@ -1,0 +1,49 @@
+/* Стили для навигационного меню */
+nav {
+  background-color: #333; /* Фоновый цвет навигации */
+  padding: 10px; /* Отступы вокруг навигации */
+}
+
+nav ul {
+  list-style: none; /* Убираем маркеры у списка */
+  padding: 0; /* Убираем внутренние отступы */
+  margin: 0; /* Убираем внешние отступы */
+  display: flex; /* Выстраиваем элементы в ряд */
+}
+
+nav li {
+  margin: 0 15px; /* Отступы между элементами меню */
+}
+
+nav a {
+  color: #fff; /* Цвет текста ссылок */
+  text-decoration: none; /* Убираем подчеркивание */
+  font-weight: bold; /* Жирный шрифт */
+}
+
+nav a:hover {
+  text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+
+h2 {
+  margin: 20px 0; /* Отступы сверху и снизу для заголовка */
+  font-size: 1.5em; /* Размер шрифта заголовка */
+  color: #333333; /* Цвет заголовка */
+}
+.slava{
+max-width:150px;
+margin: 0 auto;
+}
+
+.slava h2{
+color:#fff;
+}
+
+
+.fguadsl h2,h6{
+color:#fff;
+}
+.fguadsl h6{
+}
+

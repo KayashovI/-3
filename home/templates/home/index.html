@@ -1,0 +1,21 @@
+{% extends 'home/base.html'%}
+{% block title%} Главная страница {%endblock%}
+{% block content %}
+
+
+     {% if request.user.is_anonymous %}
+  <div class="slava">
+    <h2>
+      Скоро конец
+    </h2>
+  </div>
+
+{% else %}
+<div class="slava">
+    <h2>Удачи выжить!</h2>
+</div>
+{% endif %}
+
+
+
+{%endblock %}
